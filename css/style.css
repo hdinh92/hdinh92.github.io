@@ -512,6 +512,71 @@ ol {
 
   #contatti .maps iframe {
     width: 100%;
-    height: 400px;
+    height: 440px;
+  }
+}
+
+
+
+.btn--border-lightgrey {
+  border: 1px solid #e1eaec;
+}
+.btn--border {
+  border: 1px solid #43c6ac;
+  color: #43c6ac;
+}
+.btn {
+  position: relative;
+  font-size:  16px;
+  text-align: center;
+}
+.btn--border-lightgrey:before {
+  background-image: linear-gradient(to right, #43c6ac, #191654); 
+}
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.9s cubic-bezier(0.6,0.05,0.01,0.99);
+  backface-visibility: hidden;
+}
+.btn:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.9s cubic-bezier(0.6, 0.05, 0.01, 0.99);
+}
+.btn--border-lightgrey:hover .btn-text {
+  color: #fff;
+}
+
+.btn .btn-text {
+  position: relative;
+  z-index: 999;
+  font-weight: 700;
+}
+
+.btn-text.active i {
+  animation: bounce2 2s infinite;
+}
+@keyframes bounce2 {
+  0%,
+  15%,
+  30%,
+  45%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  69% {
+    transform: translateY(0px);
   }
 }
