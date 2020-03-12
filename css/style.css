@@ -2,9 +2,12 @@ body {
   background-image: url(..//img/bg-body.jpg);
 }
 #profile {
-  background: #31313a;
-  color: #fff;
+  /* background: #2b5876; */
+  /* background: rgba(52, 78, 81, 0.8); */
+  background: rgba(43, 89, 120, 0.8);
   background-image: url(../img/header-shadow.png);
+  color: white;
+
   background-position: right;
   background-repeat: repeat-y;
   overflow: hidden;
@@ -13,13 +16,11 @@ body {
   float: left;
   margin-top: 30px;
   width: 550px;
-  /* width:490px; */
   margin-left: 20px;
 }
 #container {
   margin: 0 auto;
-  /* width: 860px; */
-  width: 1000px;
+  /* width: 1000px; */
   margin-bottom: 20px;
   margin-top: 30px;
 }
@@ -56,7 +57,6 @@ body {
   float: left;
   margin-top: 30px;
   width: 400px;
-  /* width: 440px; */
   min-height: 230px;
   margin-left: 10px;
   background: url(./../img/personal-info-sep.png) no-repeat left top;
@@ -91,21 +91,19 @@ header {
   min-height: 80px;
 }
 
+/* MENU TAB */
 .menu {
   height: 100px;
   background-color: #ededed;
   position: relative;
-  /* padding-left: 130px;
-  padding-right: 130px; */
-  padding-left: 220px;
-  padding-right: 220px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .tabs {
   height: 117px;
   position: absolute;
   margin-top: -14px;
   z-index: 100;
-  /* float:left; */
 }
 .tabs li > a {
   padding-top: 28px;
@@ -126,10 +124,18 @@ header {
   background: url(..//img/tab-hover.png) no-repeat;
 }
 .tabs li.active a {
-  color: #2ebc14;
+  color: #1a2980;
 }
 a.tab-profile.active i {
   animation: bounce 2s infinite;
+}
+.tmenu {
+  float: left;
+}
+.tabs li > a > i {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 5px;
 }
 @keyframes bounce {
   0%,
@@ -146,28 +152,7 @@ a.tab-profile.active i {
     transform: translateY(-10px);
   }
 }
-.tabs li > a > i {
-  font-size: 45px;
-  display: block;
-  margin-bottom: 5px;
-}
-#logo {
-  float: left;
-  overflow: hidden;
-  margin-left: 10px;
-  display: none;
-}
-#logo h4 {
-  color: #555;
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  margin-left: 7px;
-}
 
-.tmenu {
-  float: left;
-}
 .no-margin {
   margin: 0px;
 }
@@ -206,13 +191,14 @@ ol {
   color: #383838;
   font-weight: 800;
   font-family: "Oswald", sans-serif !important;
+  position: relative;
 }
 .left-name h2 span {
-  color: green;
+  color: #1a2980;
   float: left;
-  width: 100%;
-  margin-top: -40px;
-  margin-left: 188px;
+  position: absolute;
+  top: 25px;
+  left: 188px;
 }
 .left-name,
 .left-address {
@@ -241,21 +227,22 @@ ol {
   font-size: 14px;
 }
 .text-color {
-  color: green;
+  color: #1a2980;
   font-weight: 700;
   margin-right: 5px;
 }
 
 .ex-heading h2 {
-  background: green;
+  background-image: linear-gradient(to right, #1a2980, #26d0ce);
   color: #fff;
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   padding: 6px 27px;
   font-size: 25px;
+  text-transform: uppercase;
 }
 .ex-box h2 {
-  background: green;
+  background: #1a2980;
   color: #fff;
   font-size: 17px;
   line-height: 17px;
@@ -347,7 +334,7 @@ ol {
 .our-team-main .image_2 {
   opacity: 0;
   position: absolute;
-  left: 32px;
+  left: 40px;
   transform: rotateY(180deg);
 }
 .our-team-main:hover .image_2 {
@@ -401,32 +388,32 @@ ol {
 .card-box__img--pic1 {
   background-image: linear-gradient(
       to right,
-      rgba(253, 132, 5, 0.35),
-      rgba(222, 37, 88, 0.35)
+      rgba(255, 227, 87, 0.35),
+      rgba(255, 168, 82, 0.35)
     ),
     url(../img/demo1.jpg);
 }
 .card-box__img--pic2 {
   background-image: linear-gradient(
       to right,
-      rgba(253, 132, 5, 0.35),
-      rgba(222, 37, 88, 0.35)
+      rgba(255, 227, 87, 0.35),
+      rgba(255, 168, 82, 0.35)
     ),
     url(../img/demo2.jpg);
 }
 .card-box__img--pic3 {
   background-image: linear-gradient(
       to right,
-      rgba(253, 132, 5, 0.35),
-      rgba(222, 37, 88, 0.35)
+      rgba(255, 227, 87, 0.35),
+      rgba(255, 168, 82, 0.35)
     ),
     url(../img/demo3.jpg);
 }
 .card-box__img--pic4 {
   background-image: linear-gradient(
       to right,
-      rgba(253, 132, 5, 0.35),
-      rgba(222, 37, 88, 0.35)
+      rgba(255, 227, 87, 0.35),
+      rgba(255, 168, 82, 0.35)
     ),
     url(../img/demo4.jpg);
 }
@@ -440,67 +427,91 @@ ol {
   padding-top: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.f-icon i{
-  font-size:20px;
+.f-icon i {
+  font-size: 20px;
 }
-.f-icon__btn{
+.f-icon__btn {
   display: inline-flex;
   width: 40px;
   height: 40px;
   text-decoration: none;
-  background:grey;
+  background: grey;
   border-radius: 50%;
   color: white;
   justify-content: center;
   align-items: center;
   margin: 0 6px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.f-icon__btn:hover{
+.f-icon__btn:hover {
   text-decoration: none;
-  background: #383838;
 }
-.f-icon__btn:hover i{
-  transition: all .4s;
+.f-icon__btn--1:hover {
+  background-color: #4267b2;
 }
-.f-icon__btn:hover > i{
-  transform:  scale(1.6) rotate(10deg);
+.f-icon__btn--2:hover {
+  background-color: #0077b5;
+}
+.f-icon__btn:hover i {
+  transition: all 0.4s;
+  color: white;
+}
+.f-icon__btn:hover > i {
+  transform: scale(1.6) rotate(10deg);
 }
 @media (max-width: 575.98px) {
-
-  #contatti{padding-bottom: 800px;}
-  #contatti .maps iframe{
+  #contatti {
+    padding-bottom: 800px;
+  }
+  #contatti .maps iframe {
     width: 100%;
     height: 200px;
   }
- }
+  .left-name h5 {
+    font-size: 12px;
+  }
+  .left-name h2 {
+    font-size: 30px;
+  }
+  .left-name h2 span {
+    top: 0;
+    left: 100px;
+  }
 
+  .our-team-main .image_2 {
+    left: 188px;
+  }
+}
 
 @media (min-width: 576px) {
+  #contatti {
+    padding-bottom: 100px;
+  }
 
-   #contatti{padding-bottom: 100px;}
-
-   #contatti .maps iframe{
-     width: 100%;
-     height: 450px;
-   }
- }
+  #contatti .maps iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
 
 @media (min-width: 768px) {
+  #contatti {
+    padding-bottom: 250px;
+  }
 
-  #contatti{padding-bottom: 250px;}
-
-  #contatti .maps iframe{
+  #contatti .maps iframe {
     width: 100%;
     height: 850px;
   }
 }
 
 @media (min-width: 992px) {
-  #contatti{padding-bottom: 100px;}
+  #contatti {
+    padding-bottom: 100px;
+  }
 
-   #contatti .maps iframe{
-     width: 100%;
-     height: 400px;
-   }
+  #contatti .maps iframe {
+    width: 100%;
+    height: 400px;
+  }
 }
