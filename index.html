@@ -33,6 +33,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -600,7 +601,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- END CARD -->
                 </div>
               </section>
@@ -611,57 +612,91 @@
           <section id="contact">
             <div class="container no-margin">
               <div class="row" id="contatti">
-                <div class="col-md-6 maps">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.7718632258752!2d106.67234025785802!3d10.769604733049578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edfcda60821%3A0xe690dcae1e1852eb!2zNjMzIEzDqiBI4buTbmcgUGhvbmcsIFBoxrDhu51uZyAxMCwgUXXhuq1uIDEwLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1584007117299!5m2!1svi!2s"
-                    frameborder="0"
-                    style="border:0;"
-                    allowfullscreen=""
-                  ></iframe>
-                </div>
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-12">
-                      <div
-                        class="fb-comments"
-                        data-href="https://hdinh92.github.io/"
-                        data-width="420"
-                        data-numposts="5"
-                      ></div>
+                      <form method="POST" id="contactform">
+                        <h2 class="text-uppercase font-weight-bold">
+                          Liên hệ
+                        </h2>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Tên "
+                            value=""
+                          />
+                        </div>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="_replyto"
+                            class="form-control"
+                            placeholder="Địa chỉ email"
+                            value=""
+                          />
+                        </div>
+                        <input type="hidden" name="_subject" value="Website contact" />
+                        <div class="form-group">
+                          <textarea
+                            name="message"
+                            class="form-control"
+                            placeholder="Lời nhắn"
+                            style="width: 100%; height: 105px;"
+                          ></textarea>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="form-group text-center">
+                          <input
+                            type="submit"
+                            name="btnSubmit"
+                            class="btnContactSubmit"
+                            value="Gửi"
+                          />
+                        </div>
+                        
+                      </form>
+                      <script>
+                        var contactform =  document.getElementById('contactform');
+                        contactform.setAttribute('action', '//formspree.io/' + 'hdinhng92' + '@' + 'gmail' + '.' + 'com');
+                    </script>
                     </div>
-                    <div class="col-md-12">
-                      <h2 class="text-uppercase mt-3 font-weight-bold">
-                        Nguyễn Hữu Dinh
-                      </h2>
-                      <i class="fa fa-phone mt-3"></i>
-                      <a href="Số điện thoại: ">0908.773.351</a><br />
-                      <i class="fa fa-envelope mt-3"></i>
-                      <a href="">hdinhng92@gmail.com</a><br />
+                  </div>
+                </div>
+                <div class="col-md-6 maps">
+                  <div class="col-md-12">
+                    <h2 class="text-uppercase mt-3 font-weight-bold">
+                      Nguyễn Hữu Dinh
+                    </h2>
+                    <i class="fa fa-phone mt-3"></i>
+                    <a href="Số điện thoại: ">0908.773.351</a><br />
+                    <i class="fa fa-envelope mt-3"></i>
+                    <a href="">hdinhng92@gmail.com</a><br />
 
+                    <a
+                      href="https://drive.google.com/uc?export=download&id=15aS4LSb47nLKjitv87xI1FJEjBWMPQYs"
+                      class="btn btn--border btn--center btn--border-lightgrey mt-3"
+                      target="_blank"
+                    >
+                      <span class="btn-text active"
+                        >Download CV <i class="fa fa-download"></i
+                      ></span>
+                    </a>
+
+                    <div class="my-4 f-icon">
                       <a
-                        href="https://drive.google.com/uc?export=download&id=15aS4LSb47nLKjitv87xI1FJEjBWMPQYs"
-                        class="btn btn--border btn--center btn--border-lightgrey mt-3"
+                        href="https://www.facebook.com/Hudi.IT92"
+                        class="f-icon__btn f-icon__btn--1"
                         target="_blank"
-                      >
-                        <span class="btn-text active"
-                          >Download CV <i class="fa fa-download"></i
-                        ></span>
-                      </a>
-
-                      <div class="my-4 f-icon">
-                        <a
-                          href="https://www.facebook.com/Hudi.IT92"
-                          class="f-icon__btn f-icon__btn--1"
-                          target="_blank"
-                          ><i class="fa fa-facebook fa-3x"></i
-                        ></a>
-                        <a
-                          href="https://www.linkedin.com/in/dinh-nguy%E1%BB%85n-138982198/"
-                          class="f-icon__btn f-icon__btn--2"
-                          target="_blank"
-                          ><i class="fa fa-linkedin fa-3x"></i
-                        ></a>
-                      </div>
+                        ><i class="fa fa-facebook fa-3x"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/dinh-nguy%E1%BB%85n-138982198/"
+                        class="f-icon__btn f-icon__btn--2"
+                        target="_blank"
+                        ><i class="fa fa-linkedin fa-3x"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
